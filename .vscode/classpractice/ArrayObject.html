@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="">
+    </head>
+    <body>
+       <h3>Student Data: </h3>
+       <p id="originalData"></p>
+       <p id="Data"></p>
+       <input type="button" onclick='displayData()' value='click here...'>
+       <input type="button"  onclick='reverseData()' value='Reverse...'>
+       <input type="button"  onclick='length()' value='Length'>
+
+        <script >
+            var arr=[10,20,30,40,50];
+            document.getElementById("originalData").innerHTML ="Before pushing the element will be"+arr;
+            function displayData(){
+            //    var idata=60;
+            //    arr.push(idata);
+            //    document.getElementById("Data").innerHTML ="After pushing the element will be"+arr;
+
+            //   var iDataPop= arr.pop();
+            //   alert(iDataPop);
+            //   document.getElementById("Data").innerHTML ="After pushing the element will be"+arr;
+
+                // var ishiftData = arr.shift();
+                // alert(ishiftData);
+                // document.getElementById("Data").innerHTML ="After pushing the element will be"+arr;
+                //  var isliceData = arr.slice();
+                //  alert(isliceData);
+                //  document.getElementById("Data").innerHTML ="After pushing the element will be"+arr;
+              arr.splice(2,2,90);
+              document.getElementById("Data").innerHTML ="After pushing the element will be"+arr;
+            }
+            function reverseData(){
+                arr.reverse();
+                document.getElementById("Data").innerHTML ="After pushing the element will be"+arr;
+            }
+            function length(){
+
+                document.getElementById("Data").innerHTML ="After pushing the element will be"+arr.length;
+            }
+        </script>
+    </body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="">
+
+    </head>
+    <body>
+      <p id="data"></p>
+    <script>
+        var  studentObjArr=[
+            {id: 1, name: 'A', marks: 120},
+            {id:2 , name:'B', marks:130},
+            {id:3, name:'C', marks:140},
+            {id:4, name:'D', marks:150},
+            {id:5, name:'E', marks:160},
+            {id:6, name:'F', marks:170},
+            {id:7, name:'G', marks:180},
+            {id:8, name:'H', marks:190},
+            {id:9, name:'I', marks:200}
+        ];
+        var str="<table styles=\"color:blue\" border bordercolor=\"#ff0000\">";
+            
+            for(var strobj in studentObjArr){
+                str=str+
+                "<tr>"+
+                "<td>"+studentObjArr[strobj].id +"</td>"+
+                "<td>"+studentObjArr[strobj].name+"</td>"+
+                "<td>"+studentObjArr[strobj].marks +"</td>"+
+                "</tr>";
+            }
+            document.getElementById("data").innerHTML= str;
+    </script>
+    </body>
+</html>

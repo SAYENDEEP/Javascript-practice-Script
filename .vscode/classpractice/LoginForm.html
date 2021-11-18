@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="">
+    </head>
+    <body>
+      <h2>Login Form</h2>
+         <form name="myForm" onsubmit="return validate()">
+            User Id:- <input type="text" id="uid"/><br><br>
+            Password:- <input type="password" id="pwd"/><br><br>
+            <button type="submit" value="Login"/>
+        </form>
+        
+        <script >
+            function validate(){
+               var uid= document.getElementById("uid").value;
+               var pwd= document.getElementById("pwd").value;
+               if(uid == ""){
+                   alert("User id cant not be null");
+                   return false;
+               }  
+               if(pwd == ""){
+                   alert("pwd cant not be null");
+                   return false;
+               }
+               if(pwd.length<5){
+                   alert("Password length must be atleast 6 characters...");
+                    return false;
+               }
+               return true;
+            }
+        </script>
+    </body>
+</html>

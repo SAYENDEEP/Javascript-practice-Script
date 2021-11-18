@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="">
+    </head>
+    <body>
+     
+        
+        <script >
+            const number = parseInt(prompt('Enter the number you want to check for : '));
+            let isPrime = true;
+
+        if (number === 1) {
+            console.log("1 is neither prime nor composite number.");
+         }
+       else if (number > 1) {
+         for (let i = 2; i < number; i++) {
+            if (number % i == 0) {
+                  isPrime = false;
+               break;
+        }
+    }
+
+    if (isPrime) {
+        alert('The number is a prime number');
+    } else {
+        alert('The number is a not prime number');
+    }
+}
+else {
+    alert("The number is not a prime number");
+}
+Output
+        </script>
+    </body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="">
+    </head>
+    <body>
+        <p id="data"></p>
+        <input type="button" onclick="displayData()" value="Click here">
+        <script>
+          function displayData(){
+              var student={ id:102, name:'Charan', marks:200};
+              var strData=
+                  '<div style="color:red;">'+
+                "Student ID:"+student.id+"<br/>"+ "Name: "+ student.name+"<br/>"+"Marks:"+student.marks
+                +'</div>';
+             
+                alert(strData);
+              document.getElementById("data").innerHTML=strData;
+          }
+        </script>
+    </body>
+</html>

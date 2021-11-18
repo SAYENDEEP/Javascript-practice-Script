@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="">
+    </head>
+    <body>
+        <p id="mouseCoords"></p>
+        <div onmouseover="mouseEntered()"
+            onmouseleave="mouseleft()"
+             onmousedown="mouseButtonClicked()"
+             onmouseup="mouseButtonRealeased()"
+             onmousemove="mouseMoved(event)"
+             style="background-color:green; width:90px;height:20px;padding: 40px;"></div>
+             <script>
+                 function mouseEntered(){
+                     console.log("Mouse entered...");
+                 }
+                 function mouseleft(){
+                     console.log("Mouse left...");
+                 }
+                 function mouseButtonClicked(){
+                     console.log("Mouse button clicked");
+                 }
+                function mouseButtonRealeased(){
+                    console.log("Mouse Button is Realeased");
+                }
+                 function mouseMoved(event){
+                     var x=event.x;
+                     var y=event.y;
+                     document.getElementById("mouseCoords").innerHTML="x:"+x+"y:"+y;
+                 }
+             </script>
+    </body>
+</html>
